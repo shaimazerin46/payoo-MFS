@@ -12,7 +12,11 @@ document.getElementById('add_money').addEventListener('click',function(event){
         console.log('correct pin');
         // step 4: get current balance
         const currentBalance = document.getElementById('balance').innerText;
-        console.log(currentBalance)
+        console.log(currentBalance);
+
+        // step 5: add amountInput with currentBalance
+        const newBalance = parseFloat(amountInput) + parseFloat(currentBalance);
+        console.log(newBalance)
     }
     else{
         console.log('wrong pin')
