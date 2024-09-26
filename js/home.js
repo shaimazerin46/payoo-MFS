@@ -9,14 +9,17 @@ document.getElementById('add_money').addEventListener('click',function(event){
     // validate pin
     if(pinInput === '1234')
     {
-        console.log('correct pin');
+       
         // step 4: get current balance
         const currentBalance = document.getElementById('balance').innerText;
-        console.log(currentBalance);
+        
 
         // step 5: add amountInput with currentBalance
         const newBalance = parseFloat(amountInput) + parseFloat(currentBalance);
-        console.log(newBalance)
+        
+        // step 6: update current balance in UI/DOM
+        document.getElementById('balance').innerText = newBalance;
+        console.log('money added successfully')
     }
     else{
         console.log('wrong pin')
