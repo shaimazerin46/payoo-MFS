@@ -40,7 +40,7 @@
 
                     <!-- add money form -->
 
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -60,6 +60,30 @@
                             </div>
                         </form>
                     </div>
+                    <!-- add money end -->
+
+                    <!-- cach out form -->
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Amount</span>
+                                </label>
+                                <input type="text" placeholder="amount" class="input input-bordered" id="amount_inp_out" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Pin</span>
+                                </label>
+                                <input type="password" placeholder="password" class="input input-bordered" id="pin_input_out" required />
+                                
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary" id="cash_out">Cash Out</button>
+                            </div>
+                        </form>
+                    </div>
+                     <!-- cash out end -->
 
                 </div>
             </div>

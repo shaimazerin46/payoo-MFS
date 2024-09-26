@@ -1,3 +1,4 @@
+// add money part
 // step 1: add event handler
 
 document.getElementById('add_money').addEventListener('click',function(event){
@@ -23,5 +24,22 @@ document.getElementById('add_money').addEventListener('click',function(event){
     }
     else{
         console.log('wrong pin')
+    }
+});
+
+// cash out part
+document.getElementById('cash_out').addEventListener('click',function(event){
+    event.preventDefault();
+    const amountCashOut = document.getElementById('amount_inp_out').value
+    const pinCashOut = document.getElementById('pin_input_out').value
+    
+    if(pinCashOut === '1234'){
+        const currentBalanceCashOut = document.getElementById('balance').innerText
+        const newBalanceCashOut = parseFloat(currentBalanceCashOut) - parseFloat(amountCashOut);
+
+        document.getElementById('balance').innerText = newBalanceCashOut;
+    }
+    else{
+        console.log('wrong')
     }
 });
