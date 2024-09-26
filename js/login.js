@@ -8,4 +8,7 @@ document.getElementById('log_btn').addEventListener('click', function(event){
 // step 3: get the phon=e number value
     const phoneInput = document.getElementById('phone_inp')
     console.log(phoneInput.value)
+    // step 4: get pin number value
+    const pinInput = document.getElementById('pin_inp').value
+    console.log(pinInput)
 });
