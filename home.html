@@ -32,15 +32,15 @@
 
                     <!-- user action button -->
                     <div>
-                        <button class="btn btn-lg">Add money</button>
-                        <button class="btn btn-lg">Cash out</button>
+                        <button class="btn btn-lg" id="btn_add_money">Add money</button>
+                        <button class="btn btn-lg" id="btn_cash_out">Cash out</button>
                     </div>
                     <div class="divider"></div>
 
 
                     <!-- add money form -->
 
-                    <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="add_money_div" class=" card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -63,7 +63,7 @@
                     <!-- add money end -->
 
                     <!-- cach out form -->
-                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div id="cashout_div" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <form class="card-body">
                             <div class="form-control">
                                 <label class="label">
@@ -91,6 +91,8 @@
     </main>
 
     <script src="js/home.js"></script>
+    <script src="js/cashout.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
